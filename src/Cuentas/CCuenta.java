@@ -70,6 +70,8 @@ public class CCuenta {
         return tipoInteres;
     }
 
+    
+    
     /**
      * @param tipoInteres the tipoInteres to set
      */
