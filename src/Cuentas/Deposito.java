@@ -24,7 +24,10 @@ public class Deposito {
     
     
     
-    
+    /**
+     * @param cantidad
+     * 
+     */
     private static void operativa_cuenta(float cantidad) {
         // TODO code application logic here
         
@@ -42,9 +45,7 @@ public class Deposito {
             System.out.println("Fallo al retirar");
         }
         
-        
-        
-        
+    
         
         
         try{

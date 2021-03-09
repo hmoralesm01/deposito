@@ -8,6 +8,8 @@ package Cuentas;
 /**
  *
  * @author Hmora
+ * @version 1.0
+ * @since 09-03-2021
  */
 public class CCuenta {
     
@@ -22,7 +24,7 @@ public class CCuenta {
     public CCuenta() {
     }
     /**
-     * @return the nombre
+     * @return the nombre is returned
      */
     public String getNombre() {
         return nombre;
@@ -36,7 +38,7 @@ public class CCuenta {
     }
 
     /**
-     * @return the cuenta
+     * @return the cuenta is returned
      */
     public String getCuenta() {
         return cuenta;
@@ -50,7 +52,7 @@ public class CCuenta {
     }
 
     /**
-     * @return the saldo
+     * @return the saldo is returned
      */
     public double getSaldo() {
         return saldo;
@@ -64,7 +66,7 @@ public class CCuenta {
     }
 
     /**
-     * @return the tipoInteres
+     * @return the tipoInteres is returned
      */
     public double getTipoInteres() {
         return tipoInteres;
@@ -80,18 +82,30 @@ public class CCuenta {
     }
     
     
-
+    /**
+     * Contructor nombre, cuenta, saldo
+     * @param nombre
+     * @param cuenta
+     * @param saldo
+     */
     public CCuenta(String nombre, String cuenta, double saldo) {
         this.nombre = nombre;
         this.cuenta = cuenta;
         this.saldo = saldo;
     }
 
-    
+    /**
+     * @return the saldo is returned
+     */
 
     public Double estado() {
         return getSaldo();
     }
+    /**
+     * @param cantidad 
+     * @throws if the amount to deposit is negative
+     * 
+     */
     
     public void ingresar(double cantidad) throws Exception {
         
@@ -100,7 +114,11 @@ public class CCuenta {
         }
         setSaldo(getSaldo() + cantidad);
     }
-    
+    /**
+     * @param cantidad enters as param
+     * @throws if the amount to withdraw is negative or there is not enough money.
+     * 
+     */
     public void retirar(double cantidad) throws Exception{
     
         if (cantidad <= 0)
