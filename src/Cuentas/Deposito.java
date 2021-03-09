@@ -21,22 +21,31 @@ public class Deposito {
 
     }
 
+    
+    
+    
+    
     private static void operativa_cuenta(float cantidad) {
         // TODO code application logic here
         
         double saldoActual;
         
         CCuenta cuenta1;
-        cuenta1= new CCuenta ("Antonio Lopez", "1000-2365-85-1230456789", 2500);
+        cuenta1= new CCuenta ("Jesus Martinez", "1000-2365-85-1230456789", 2500);
         
         saldoActual=cuenta1.estado();
         
         try{
-            cuenta1.retirar(2300);
+            cuenta1.retirar(1800);
         }
         catch(Exception e){
             System.out.println("Fallo al retirar");
         }
+        
+        
+        
+        
+        
         
         try{
             System.out.println("Ingreso en cuenta");
