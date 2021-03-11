@@ -10,6 +10,7 @@ package Cuentas;
  * @author Hmora
  * @version 1.0
  * @since 09-03-2021
+ * Visto
  */
 public class CCuenta {
     
